@@ -109,6 +109,7 @@ if test "x$PTHREAD_CFLAGS$PTHREAD_LIBS" != "x"; then
         ax_pthread_save_CFLAGS="$CFLAGS"
         ax_pthread_save_LIBS="$LIBS"
         AS_IF([test "x$PTHREAD_CC" != "x"], [CC="$PTHREAD_CC"])
+        AS_IF([test "x$PTHREAD_CXX" != "x"], [CXX="$PTHREAD_CXX"])
         CFLAGS="$CFLAGS $PTHREAD_CFLAGS"
         LIBS="$PTHREAD_LIBS $LIBS"
         AC_MSG_CHECKING([for pthread_join using $CC $PTHREAD_CFLAGS $PTHREAD_LIBS])
